@@ -3,12 +3,13 @@
 	"GoVersion": "go1.5",
 	"Deps": [
 		{
-			"ImportPath": "github.com/gorilla/context",
-			"Rev": "1c83b3eabd45b6d76072b66b746c20815fb2872d"
+			"ImportPath": "github.com/mattn/go-runewidth",
+			"Comment": "travisish-44-ge882a96",
+			"Rev": "e882a96ec18dd43fa283187b66af74497c9101c0"
 		},
 		{
-			"ImportPath": "github.com/gorilla/mux",
-			"Rev": "26a6070f849969ba72b72256e9f14cf519751690"
+			"ImportPath": "github.com/nsf/termbox-go",
+			"Rev": "362329b0aa6447eadd52edd8d660ec1dff470295"
 		}
 	]
 }
