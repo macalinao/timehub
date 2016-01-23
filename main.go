@@ -10,5 +10,8 @@ import (
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", handlers.HomeHandler)
-	http.ListenAndServe(":8000", r)
+	go func() {
+		http.ListenAndServe(":8000", r)
+	}()
+	panic(http.ListenAndServe(":8080", http.FileServer(http.Dir("static/"))))
 }
