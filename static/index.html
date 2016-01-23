@@ -1,34 +1,11 @@
 <!doctype html>
 <html>
   <head>
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles.css" />
   </head>
   <body>
-    <div id="container">
-      <h1>timehub</h1>
-      <p>Go back in time for your files</p>
-      <pre>
-  package main
-
-  import (
-    "net/http"
-
-    "github.com/gorilla/mux"
-    "github.com/simplyianm/timehub/handlers"
-  )
-
-  func main() {
-    r := mux.NewRouter()
-    r.HandleFunc("/", handlers.HomeHandler)
-    go func() {
-      http.ListenAndServe(":8000", r)
-    }()
-    panic(http.ListenAndServe(":8080", http.FileServer(http.Dir("static/"))))
-  }
-      </pre>
-    </div>
-    <div id="dummy"></div>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <h1>timehub</h1>
+    <p>Go back in time for your files</p>
     <script src="scripts.js"></script>
   </body>
 </html>
